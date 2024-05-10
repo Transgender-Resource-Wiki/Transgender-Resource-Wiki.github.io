@@ -40,7 +40,7 @@
     top: 0;
     left: 92vw;
     width: 4vw;
-    height: 1000vw;
+    height: 100vh;
   }
   .right-blue {
     background-color: lightskyblue;
@@ -49,16 +49,41 @@
     top: 0;
     left: 96vw;
     width: 4vw;
-    height: 1000vw;
+    height: 100vh;
   }
-
+  /* Make the bars go horizontal on mobile */
+  /* left will be skinny on top and right will be thick on bottom */
   @media (max-width: 768px) {
-    .left-blue,
-    .left-pink,
-    .center-white,
-    .right-pink,
+    
+    .left-blue {
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 4vh;
+    }
+    .left-pink {
+        top: 4vh;
+        left: 0;
+        width: 100vw;
+        height: 4vh;
+    }
+    .center-white {
+        top: 8vh;
+        left: 0;
+        width: 100vw;
+        height: 70vh;
+    }
+    .right-pink {
+        top: 78vh;
+        left: 0;
+        width: 100vw;
+        height: 4vh;
+    }
     .right-blue {
-      background-color: red;
+      top: 82vh;
+      left: 0;
+      width: 100vw;
+      height: 18vh;
     }
   }
 
