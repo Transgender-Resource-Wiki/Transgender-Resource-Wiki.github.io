@@ -13,7 +13,7 @@
     top: 0;
 	left: 0;
 	width: 12vw;
-	height: 100vh;
+	height: 1000vh;
   }
   .left-pink {
     background-color: pink;
@@ -22,7 +22,7 @@
     top: 0;
     left: 12vw;
     width: 4vw;
-    height: 100vh;
+    height: 1000vh;
   }
   .center-white {
     background-color: whitesmoke;
@@ -31,7 +31,7 @@
     top: 0;
     left: 16vw;
     width: 76vw;
-    height: 100vh;
+    height: 1000vh;
   }
   .right-pink {
     background-color: pink;
@@ -40,7 +40,7 @@
     top: 0;
     left: 92vw;
     width: 4vw;
-    height: 100vw;
+    height: 1000vw;
   }
   .right-blue {
     background-color: lightskyblue;
@@ -49,6 +49,17 @@
     top: 0;
     left: 96vw;
     width: 4vw;
-    height: 100vw;
+    height: 1000vw;
   }
+
+  @media (max-width: 768px) {
+    .left-blue,
+    .left-pink,
+    .center-white,
+    .right-pink,
+    .right-blue {
+      background-color: red;
+    }
+  }
+
 </style>
