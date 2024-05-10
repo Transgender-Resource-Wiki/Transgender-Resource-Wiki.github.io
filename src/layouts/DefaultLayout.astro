@@ -1,0 +1,22 @@
+---
+import SiteMap from "../components/SiteMap.astro"
+import ColoredSideBars from "../components/ColoredSideBars.astro"
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Digital Artist services, accessible for everyone."
+    />
+  </head>
+  <body style="margin-left: 18vw; margin-right: 10vw;">
+    <main>
+        <ColoredSideBars />
+        <SiteMap name="Site Map" />
+        <slot />
+    </main>
+  </body>
+</html>
