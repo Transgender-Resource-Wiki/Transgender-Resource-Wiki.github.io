@@ -1,19 +1,21 @@
-
 <div class="left-blue"></div>
 <div class="left-pink"></div>
 <div class="center-white"></div>
 <div class="right-pink"></div>
 <div class="right-blue"></div>
+<div class="horz-dark-blue"></div>
 
 <style>
+
+  /* Bars for desktop */
   .left-blue {
     background-color: lightskyblue;
     position: fixed;
     z-index: 0;
     top: 0;
-	left: 0;
-	width: 12vw;
-	height: 1000vh;
+	  left: 0;
+	  width: 12vw;
+	  height: 100vh;
   }
   .left-pink {
     background-color: pink;
@@ -22,16 +24,16 @@
     top: 0;
     left: 12vw;
     width: 4vw;
-    height: 1000vh;
+    height: 100vh;
   }
   .center-white {
     background-color: whitesmoke;
     position: fixed;
-    z-index: -1;
+    z-index: -2;
     top: 0;
-    left: 16vw;
-    width: 76vw;
-    height: 1000vh;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
   }
   .right-pink {
     background-color: pink;
@@ -51,27 +53,32 @@
     width: 4vw;
     height: 100vh;
   }
-  /* Make the bars go horizontal on mobile */
-  /* left will be skinny on top and right will be thick on bottom */
+
+  .horz-dark-blue {
+    background-color: rgb(88, 158, 219);
+    border-radius: 0.5rem;
+    position: fixed;
+    z-index: 1;
+    top: 33vh;
+    left: 0.5vh;
+    width: 11.5vw;
+    height: 0.6rem;
+  }
+  
+  /* Bars for mobile */
   @media (max-width: 768px) {
-    
+    /* Arranged top to bottom*/
     .left-blue {
         top: 0;
         left: 0;
         width: 100vw;
-        height: 30vh;
+        height: 4vh;
     }
     .left-pink {
-        top: 30vh;
+        top: 4vh;
         left: 0;
         width: 100vw;
-        height: 2vh;
-    }
-    .center-white {
-        top: 32vh;
-        left: 0;
-        width: 100vw;
-        height: 64vh;
+        height: 4vh;
     }
     .right-pink {
         top: 96vh;
@@ -84,6 +91,9 @@
       left: 0;
       width: 100vw;
       height: 2vh;
+    }
+    .horz-dark-blue {
+      visibility: hidden;
     }
   }
 
