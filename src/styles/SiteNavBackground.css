@@ -10,16 +10,17 @@
     height: 85vh;
     width: 95vw;
 }
-.bg-gray-block {
+.bg-site-block {
     display: block;
     background: linear-gradient(#589edb, #e591de);
     border-radius: 0.5rem;
     position: fixed;
     z-index: 3;
     top: 2.3vh;
-    left: 36.2vw;
+    left: 30vw;
+    right: 27vw;
     margin: 15px;
-    width: 8rem;
+    width: auto;
     height: 2.5rem;
 }
 .bg-darken {
@@ -34,6 +35,9 @@
 }
 @media (min-width: 769px) {
     .bg-block {
+        visibility: hidden;
+    }
+    .bg-site-block {
         visibility: hidden;
     }
     .bg-darken {
