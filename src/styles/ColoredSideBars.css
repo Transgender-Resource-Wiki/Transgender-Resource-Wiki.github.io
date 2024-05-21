@@ -1,0 +1,117 @@
+/* Bars for mobile */
+/* Arranged top to bottom*/
+.left-blue {
+    background-color: lightskyblue;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 4vh;
+}
+.left-pink {
+    background-color: pink;
+    position: fixed;
+    z-index: 0;
+    top: 4vh;
+    left: 0;
+    width: 100vw;
+    height: 4vh;
+}
+.center-white {
+    background-color: whitesmoke;
+    position: fixed;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.right-pink {
+    background-color: pink;
+    position: fixed;
+    z-index: 0;
+    top: 96vh;
+    left: 0;
+    width: 100vw;
+    height: 2vh;
+}
+.right-blue {
+    background-color: lightskyblue;
+    position: fixed;
+    z-index: 0;
+    top: 98vh;
+    left: 0;
+    width: 100vw;
+    height: 2vh;
+}
+.horz-dark-blue-0 {
+    visibility: hidden;
+}
+.horz-dark-blue-1 {
+  visibility: hidden;
+}
+/*Bars for desktop*/
+@media (min-width: 769px) {
+  .left-blue {
+    background-color: lightskyblue;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+	left: 0;
+	width: 12vw;
+	height: 100vh;
+  }
+  .left-pink {
+    background-color: pink;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 12vw;
+    width: 4vw;
+    height: 100vh;
+  }
+  .right-pink {
+    background-color: pink;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 92vw;
+    width: 4vw;
+    height: 100vh;
+  }
+  .right-blue {
+    background-color: lightskyblue;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 96vw;
+    width: 4vw;
+    height: 100vh;
+  }
+
+  .horz-dark-blue-0 {
+    visibility: visible;
+    background: linear-gradient(#589edb, #e591de);
+    border-radius: 0.5rem;
+    position: fixed;
+    z-index: 0;
+    top: 0.5vh;
+    left: 0.5vh;
+    width: 11.5vw;
+    height: 2.5rem;
+  }
+  .horz-dark-blue-1 {
+    visibility: visible;
+    background: #589edb;
+    border-radius: 0.5rem;
+    position: fixed;
+    z-index: 1;
+    top: 33vh;
+    left: 0.5vh;
+    width: 11.5vw;
+    height: 0.6rem;
+  }
+}
+
+  
