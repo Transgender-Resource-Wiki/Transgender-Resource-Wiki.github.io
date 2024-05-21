@@ -89,28 +89,27 @@
     width: 4vw;
     height: 100vh;
   }
-
   .horz-dark-blue-0 {
     visibility: visible;
     background: linear-gradient(#589edb, #e591de);
     border-radius: 0.5rem;
     position: fixed;
     z-index: 0;
-    top: 0.5vh;
-    left: 0.5vh;
+    top: 0.5%;
+    left: 0.2%;
     width: 11.5vw;
-    height: 2.5rem;
+    height: 4.25%;
   }
   .horz-dark-blue-1 {
     visibility: visible;
-    background: #589edb;
+    background: linear-gradient( #91eafa, #a1dee9, #589edb);
     border-radius: 0.5rem;
     position: fixed;
     z-index: 1;
-    top: 33vh;
-    left: 0.5vh;
+    top: 5%;
+    left: 0.2%;
     width: 11.5vw;
-    height: 0.6rem;
+    height: 28%;
   }
 }
 

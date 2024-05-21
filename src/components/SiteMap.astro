@@ -46,7 +46,7 @@ const { link } = Astro.props;
 		z-index: 3;
 		margin: 15px;
 		text-align: center;
-		top: 7vh;
+		top: 7%;
 		left: 0;
 		width: 95vw;
 		height: auto;
@@ -83,83 +83,99 @@ const { link } = Astro.props;
 	/* Desktop */ 
 	@media (min-width: 769px) {
 		.scroll-area {
-		  visibility: visible;
-		  background-color: none;
-		  background-image: none;
-		  position: fixed;
-		  z-index: 3;
-		  text-align: left;
-		  top: 5vh;
-		  left: 0;
-		  width: 12vw;
-		  height: auto;
-		  max-height: 28vh;
-		  overflow-y: scroll;
-		  flex-direction: column;
+		  	visibility: visible;
+		  	background-color: none;
+		  	background-image: none;
+		  	position: fixed;
+		  	z-index: 3;
+		  	text-align: left;
+		  	top: 5%;
+		  	left: 0;
+		  	width: 12vw;
+		  	height: auto;
+		  	max-height: 28%;
+		  	overflow-y: scroll;
+		  	flex-direction: column;
+			direction: rtl;
 		}  
 		.scroll-area-mobile {
-		  visibility: visible;
-		  background-color: none;
-		  background-image: none;
-		  position: fixed;
-		  z-index: 3;
-		  text-align: left;
-		  top: 5vh;
-		  left: 0;
-		  width: 12vw;
-		  height: auto;
-		  max-height: 28vh;
-		  overflow-y: scroll;
-		  flex-direction: column;
-		  margin: 0;
+		  	visibility: visible;
+		  	background-color: none;
+		  	background-image: none;
+		  	position: fixed;
+		  	z-index: 3;
+		  	text-align: left;
+		  	top: 5%;
+		  	left: 0;
+		  	width: 12vw;
+		  	height: auto;
+		  	max-height: 28%;
+		  	overflow-y: scroll;
+		  	flex-direction: column;
+		  	margin: 0;
+			direction: rtl;
 		}   
 		.paragraph {
-		  visibility: visible;
-		  position: fixed;
-		  top: 0.2vh;
-		  left: 0;
-		  width: auto;
-		  height: auto;
-		  padding-left: 2vh;
-		  margin-top: 1vh;
-		  font-size: 1.33rem;
-		  color: whitesmoke;
-		  font-family: Verdana, sans-serif, system-ui;
+		  	visibility: visible;
+			align-self: center;
+		  	position: fixed;
+		  	top: 0.2vh;
+		  	left: 0;
+			right: 88vw;
+		  	width: auto;
+		  	height: auto;
+		  	padding-left: 2vh;
+		  	margin-top: 0.4%;
+		  	font-size: 1.33rem;
+			font-size: clamp(2.5vh, 1vw);
+		  	color: whitesmoke;
+		  	font-family: Verdana, sans-serif, system-ui;
 		}
 		.paragraph-mobile {
-		  visibility: visible;
-		  position: fixed;
-		  top: 0.2vh;
-		  left: 0;
-		  width: auto;
-		  height: auto;
-		  padding-left: 2vh;
-		  margin-top: 1vh;
-		  font-size: 1.33rem;
-		  color: whitesmoke;
-		  font-family: Verdana, sans-serif, system-ui;
+		  	visibility: visible;
+		  	position: fixed;
+		  	top: 0.2vh;
+		  	left: 0;
+			right: 88vw;
+		  	width: auto;
+		  	height: auto;
+		  	padding-left: 2vh;
+		  	margin-top: 1vh;
+		  	font-size: 1.33rem;
+		  	color: whitesmoke;
+		  	font-family: Verdana, sans-serif, system-ui;
 		}
 		.link-list {
-		  visibility: visible;
-		  width: auto;
-		  height: auto;
-		  padding-left: 1vw;
-		  font-size: 1.25rem;
-		  color: whitesmoke;
-		  font-family: Verdana, sans-serif, system-ui;
-		  list-style-type: none;
+		  	visibility: visible;
+		  	width: auto;
+		  	height: auto;
+		  	padding-left: 1.2vw;
+		  	font-size: 1.25rem;
+		  	color: whitesmoke;
+		  	font-family: Verdana, sans-serif, system-ui;
+		  	list-style-type: none;
 		}
 		.link-list-mobile {
-		  visibility: visible;
-		  width: auto;
-		  height: auto;
-		  padding-left: 1vw;
-		  font-size: 1.25rem;
-		  color: whitesmoke;
-		  font-family: Verdana, sans-serif, system-ui;
-		  list-style-type: none;
+		  	visibility: visible;
+		  	width: auto;
+		  	height: auto;
+		  	padding-left: 1.2vw;
+		  	font-size: 1.25rem;
+		  	color: whitesmoke;
+		  	font-family: Verdana, sans-serif, system-ui;
+		  	list-style-type: none;
 		}
-		
+
+		.link-list a,
+		.link-list-mobile a {
+			color: whitesmoke;
+			text-decoration: none;
+			text-shadow: 2px 2px 4px black;
+		}
+		.link-list a:hover,
+		.link-list-mobile a:hover {
+			font-size: 1.33rem;
+		}
 	}
 
 	
