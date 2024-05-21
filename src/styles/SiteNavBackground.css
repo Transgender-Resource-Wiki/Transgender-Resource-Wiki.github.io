@@ -1,0 +1,30 @@
+.bg-block {
+    display: block;
+    background-color: whitesmoke;
+    border-radius: 2rem;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    margin: 15px;
+    height: 85vh;
+    width: 95vw;
+}
+.bg-darken {
+    display: block;
+    background-color: rgba(16, 16, 17, 0.8);
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+@media (min-width: 769px) {
+    .bg-block {
+        visibility: hidden;
+    }
+    .bg-darken {
+        visibility: hidden;
+    }
+}

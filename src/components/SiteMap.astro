@@ -1,61 +1,169 @@
 ---
 interface Props {
-	name: string;
+	link: string[][];
 }
 
-const { name } = Astro.props;
+const { link } = Astro.props;
 ---
-
-<div class="scroll-area">
-	<p>{name}</p>
-	<ul>
-		<li>1</li>
-		<li>2</li>
-		<li>3</li>
-		<li>4</li>
-		<li>5</li>
-		<li>6</li>
-		<li>7</li>
-		<li>8</li>
-		<li>9</li>
-		<li>10</li>
-		<li>1</li>
-		<li>2</li>
-		<li>3</li>
-		<li>4</li>
-		<li>5</li>
-		<li>6</li>
-		<li>7</li>
-		<li>8</li>
-		<li>9</li>
-		<li>10</li>
+<p id="site-map-p" class="paragraph">Site Map</p>
+<div id="site-map-div" class="scroll-area">
+	
+	<ul id="site-map-ul" class="link-list">
+		<!-- Link holds arrays of links and link names -->
+		<!-- each array that it holds should have exactly two elements in it -->
+		{link.map((link) => (link.length == 2 &&
+		<li><a href={link[1]}>{link[0]}</a></li>
+		))}
 	</ul>
 </div>
+
 <style>
+	/*Mobile classes, regular is hidden and mobile is shown in menu*/ 
 	.scroll-area {
+		visibility: hidden;
+		position: fixed;
+		z-index: -3;
+		width: 0;
+		height: 0;
+	}
+	.paragraph {
+		visibility: hidden;
+		position: fixed;
+		width: 0;
+		height: 0;
+	}
+	.link-list {
+		visibility: hidden;
+		width: 0;
+		height: 0;
+	}
+
+	.scroll-area-mobile {
+		visibility: visible;
 		background-color: none;
 		background-image: none;
 		position: fixed;
-		z-index: 1;
-		top: 0;
+		z-index: 3;
+		margin: 15px;
+		text-align: center;
+		top: 7vh;
 		left: 0;
-		width: 12vw;
-		max-height: 33vh;
+		width: 95vw;
+		height: auto;
+		max-height: 28vh;
 		overflow-y: scroll;
 		flex-direction: column;
-	}      
-	p {
-		padding-left: 3vh;
+	}
+	.paragraph-mobile {
+		position: fixed;
+		z-index: 3;
+		visibility: visible;
+		position: fixed;
+		top: 2vh;
+		text-align: center;
+		width: 95vw;
+		height: auto;
+		padding-left: 0;
 		font-size: 1.33rem;
 		color: white;
 		font-family: Verdana, sans-serif, system-ui;
 		text-shadow: -2px 0 rgb(10, 81, 146), 0 2px rgb(10, 81, 146), 2px 0 rgb(10, 81, 146), 0 -2px rgb(10, 81, 146);
+		
 	}
-	ul {
+	.link-list-mobile {
+		visibility: visible;
+		width: auto;
+		height: auto;
+		padding-left: 1vw;
 		font-size: 1.25rem;
 		color: white;
 		font-family: Verdana, sans-serif, system-ui;
 		list-style-type: none;
 	}
+
+	/* Desktop */ 
+	@media (min-width: 769px) {
+		.scroll-area {
+		  visibility: visible;
+		  background-color: none;
+		  background-image: none;
+		  position: fixed;
+		  z-index: 3;
+		  text-align: left;
+		  top: 5vh;
+		  left: 0;
+		  width: 12vw;
+		  height: auto;
+		  max-height: 28vh;
+		  overflow-y: scroll;
+		  flex-direction: column;
+		}  
+		.scroll-area-mobile {
+		  visibility: visible;
+		  background-color: darkcyan;
+		  background-image: none;
+		  position: fixed;
+		  z-index: 3;
+		  text-align: left;
+		  top: 5vh;
+		  left: 0;
+		  width: 12vw;
+		  height: auto;
+		  max-height: 28vh;
+		  overflow-y: scroll;
+		  flex-direction: column;
+		  margin: 0;
+		}   
+		.paragraph {
+		  visibility: visible;
+		  position: fixed;
+		  top: 0;
+		  left: 0;
+		  width: auto;
+		  height: auto;
+		  padding-left: 2vh;
+		  margin-top: 1vh;
+		  font-size: 1.33rem;
+		  color: white;
+		  font-family: Verdana, sans-serif, system-ui;
+		  text-shadow: -2px 0 rgb(10, 81, 146), 0 2px rgb(10, 81, 146), 2px 0 rgb(10, 81, 146), 0 -2px rgb(10, 81, 146);
+		}
+		.paragraph-mobile {
+		  visibility: visible;
+		  position: fixed;
+		  top: 0;
+		  left: 0;
+		  width: auto;
+		  height: auto;
+		  padding-left: 2vh;
+		  margin-top: 1vh;
+		  font-size: 1.33rem;
+		  color: white;
+		  font-family: Verdana, sans-serif, system-ui;
+		  text-shadow: -2px 0 rgb(10, 81, 146), 0 2px rgb(10, 81, 146), 2px 0 rgb(10, 81, 146), 0 -2px rgb(10, 81, 146);
+		}
+		.link-list {
+		  visibility: visible;
+		  width: auto;
+		  height: auto;
+		  padding-left: 1vw;
+		  font-size: 1.25rem;
+		  color: white;
+		  font-family: Verdana, sans-serif, system-ui;
+		  list-style-type: none;
+		}
+		.link-list-mobile {
+		  visibility: visible;
+		  width: auto;
+		  height: auto;
+		  padding-left: 1vw;
+		  font-size: 1.25rem;
+		  color: white;
+		  font-family: Verdana, sans-serif, system-ui;
+		  list-style-type: none;
+		}
+		
+	}
+
 	
 </style>

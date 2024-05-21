@@ -1,6 +1,11 @@
 ---
 const {title} = Astro.props
-import Hamburger from "../scripts/Hamburger"
+const links = [["Home", "/"],
+["About1", "/about"], ["About2", "/about"], ["About3", "/about"],
+["About4", "/about"], ["About5", "/about"], ["About6", "/about"],
+["About7", "/about"], ["About8", "/about"], ["About9", "/about"],
+["About0", "/about"], ["About1", "/about"], ["About2", "/about"]];
+import SiteNav from "../scripts/SiteNav"
 import SiteMap from "../components/SiteMap.astro"
 import ColoredSideBars from "../components/ColoredSideBars.astro"
 ---
@@ -15,28 +20,29 @@ import ColoredSideBars from "../components/ColoredSideBars.astro"
   </head>
   <body>
     <main>
-        <Hamburger client:load/>
+        <SiteNav client:load/>
         <ColoredSideBars />
-        <SiteMap name="Site Map" />
+        <SiteMap link={links} />
         <slot />
     </main>
   </body>
 </html>
 
 <style>
-  body {
+   body {
+      margin-left: 4vw;
+      margin-right: 4vw;
+      margin-top: 10vh;
+      margin-bottom: 6vh;
+  }
+  
+  @media (min-width: 769px) {
+    body {
       display: flex;
       margin-left: 18vw;
       margin-right: 10vw;
       margin-top: 2vh;
       margin-bottom: 2vh;
-  }
-  @media (max-width: 768px) {
-    body {
-      margin-left: 4vw;
-      margin-right: 4vw;
-      margin-top: 12vh;
-      margin-bottom: 6vh;
     }
   }
   </style>
