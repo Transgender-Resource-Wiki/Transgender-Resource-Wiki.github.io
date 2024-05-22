@@ -46,7 +46,7 @@ const { link } = Astro.props;
 		z-index: 3;
 		margin: 15px;
 		text-align: center;
-		top: 7%;
+		top: 8%;
 		left: 0;
 		width: 95vw;
 		height: auto;
@@ -73,11 +73,22 @@ const { link } = Astro.props;
 		visibility: visible;
 		width: auto;
 		height: auto;
-		padding-left: 1vw;
+		padding-left: 3.5vw;
+		text-align: center;
 		font-size: 1.25rem;
 		color: whitesmoke;
 		font-family: Verdana, sans-serif, system-ui;
 		list-style-type: none;
+	}
+
+	
+	.link-list-mobile a {
+		color: whitesmoke;
+		text-decoration: none;
+		text-shadow: 2px 2px 4px black;
+	}
+	.link-list-mobile a:hover {
+			font-size: 1.33rem;
 	}
 
 	/* Desktop */ 
@@ -117,17 +128,14 @@ const { link } = Astro.props;
 		}   
 		.paragraph {
 		  	visibility: visible;
-			align-self: center;
 		  	position: fixed;
-		  	top: 0.2vh;
+		  	top: 0.2%;
 		  	left: 0;
-			right: 88vw;
-		  	width: auto;
+		  	width: 9%;
 		  	height: auto;
-		  	padding-left: 2vh;
+		  	padding-left: 0.5vw;
 		  	margin-top: 0.4%;
 		  	font-size: 1.33rem;
-			font-size: clamp(2.5vh, 1vw);
 		  	color: whitesmoke;
 		  	font-family: Verdana, sans-serif, system-ui;
 		}
@@ -136,10 +144,9 @@ const { link } = Astro.props;
 		  	position: fixed;
 		  	top: 0.2vh;
 		  	left: 0;
-			right: 88vw;
 		  	width: auto;
 		  	height: auto;
-		  	padding-left: 2vh;
+		  	padding-left: 0.5vw;
 		  	margin-top: 1vh;
 		  	font-size: 1.33rem;
 		  	color: whitesmoke;

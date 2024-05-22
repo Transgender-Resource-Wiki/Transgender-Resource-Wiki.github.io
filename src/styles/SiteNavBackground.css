@@ -10,7 +10,7 @@
     height: 85vh;
     width: 95vw;
 }
-.bg-site-block {
+.bg-para-block {
     display: block;
     background: linear-gradient(#589edb, #e591de);
     border-radius: 0.5rem;
@@ -22,6 +22,19 @@
     margin: 15px;
     width: auto;
     height: 2.5rem;
+}
+.bg-smap-block {
+    display: block;
+    background: linear-gradient( #91eafa, #a1dee9, #589edb);
+    border-radius: 0.5rem;
+    position: fixed;
+    z-index: 3;
+    top: 8%;
+    left: 30vw;
+    right: 27vw;
+    margin: 15px;
+    width: auto;
+    height: 28vh;
 }
 .bg-darken {
     display: block;
@@ -37,7 +50,10 @@
     .bg-block {
         visibility: hidden;
     }
-    .bg-site-block {
+    .bg-para-block {
+        visibility: hidden;
+    }
+    .bg-smap-block {
         visibility: hidden;
     }
     .bg-darken {

@@ -35,7 +35,8 @@ export default function SiteNav(){
           {toggled && (
           <span>
             <div className="bg-block"></div>
-            <div className="bg-site-block"></div>
+            <div className="bg-para-block"></div>
+            <div className="bg-smap-block"></div>
             <div className="bg-darken"></div>
           </span>
           )}

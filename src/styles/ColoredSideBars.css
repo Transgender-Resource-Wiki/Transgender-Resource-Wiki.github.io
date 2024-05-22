@@ -96,8 +96,8 @@
     position: fixed;
     z-index: 0;
     top: 0.5%;
-    left: 0.2%;
-    width: 11.5vw;
+    left: -0.2%;
+    width: 11.9vw;
     height: 4.25%;
   }
   .horz-dark-blue-1 {
@@ -107,8 +107,8 @@
     position: fixed;
     z-index: 1;
     top: 5%;
-    left: 0.2%;
-    width: 11.5vw;
+    left: -0.2%;
+    width: 11.9vw;
     height: 28%;
   }
 }
