@@ -1,5 +1,6 @@
 ---
-const {title} = Astro.props
+const {frontmatter} = Astro.props;
+
 const links = [["Home", "/"],
 ["About1", "/about"], ["About2", "/about"], ["About3", "/about"],
 ["About4", "/about"], ["About5", "/about"], ["About6", "/about"],
@@ -7,6 +8,7 @@ const links = [["Home", "/"],
 ["About0", "/about"], ["About1", "/about"], ["About2", "/about"]];
 import SiteNav from "../scripts/SiteNav"
 import SiteMap from "../components/SiteMap.astro"
+import '../styles/ContentsTable.css';
 ---
 <!doctype html>
 <html lang="en">
@@ -15,7 +17,7 @@ import SiteMap from "../components/SiteMap.astro"
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Transgender Resource Library"/>
     <meta name="generator" content={Astro.generator} />
-    <title>{title} &#8226; Transgender Resource Library</title>
+    <title>{frontmatter.title} &#8226; Transgender Resource Library</title>
   </head>
   <body>
     <main>
