@@ -2,6 +2,7 @@
 layout: ../layouts/DefaultLayout.astro
 title: Home
 ---
+import HeartRow from '../components/HeartRow.astro';
 
 <div id="toc" class="contents-table">
   <ul>
@@ -25,5 +26,6 @@ archives to help ensure that information isn't lost.
 &emsp; Navigation to the content on the Transgender Resource Library can be found on the left for
 desktop users and in the top right corner for mobile users.
 
-
-
+<HeartRow hearts={["../hearts/transgender_heart.png",
+                   "../hearts/enby_heart.png",
+                   "../hearts/lgbtq_heart.png" ]} />
