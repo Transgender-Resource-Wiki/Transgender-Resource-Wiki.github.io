@@ -40,7 +40,7 @@
      id="layer1"
      transform="translate(0,-8)">
     <rect
-       style="fill:#a0a0a0;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-dasharray:none;stroke-opacity:1"
        id="rect1"
        width="41.313435"
        height="20.179104"
@@ -50,7 +50,7 @@
        rx="0" />
     <path
        sodipodi:type="star"
-       style="fill:#a0a0a0;fill-opacity:1;stroke:#ffffff;stroke-width:0.415826;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.415826;stroke-dasharray:none;stroke-opacity:1"
        id="path1-5"
        inkscape:flatsided="false"
        sodipodi:sides="3"
@@ -67,7 +67,7 @@
        transform="matrix(-3.6869436,0,0,-1.5035294,60.539262,44.20613)" />
     <path
        sodipodi:type="star"
-       style="fill:#a0a0a0;fill-opacity:1;stroke:#ffffff;stroke-width:0.402805;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.402805;stroke-dasharray:none;stroke-opacity:1"
        id="path1"
        inkscape:flatsided="false"
        sodipodi:sides="3"
