@@ -7,6 +7,8 @@ const links = [["Home", "/"],
 ["Media & Other Resources", "/about"], ["About", "/"], ["About", "/"], ["About", "/"], ["About", "/"]];
 import SiteNav from "../scripts/SiteNav"
 import SiteMap from "../components/SiteMap.astro"
+
+import Footer from '../components/Footer.astro';
 import '../styles/ContentsTable.css';
 ---
 <!doctype html>
@@ -23,6 +25,7 @@ import '../styles/ContentsTable.css';
         <SiteNav client:load/>
         <SiteMap link={links} />
         <slot />
+        <Footer />
     </main>
   </body>
 </html>
