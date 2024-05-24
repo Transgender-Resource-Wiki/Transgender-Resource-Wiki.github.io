@@ -1,0 +1,25 @@
+---
+interface Props {
+	hearts: string[];
+}
+
+const { hearts } = Astro.props;
+---
+
+<div class="heart-container">
+    {hearts.map((hearts) => <img src={hearts} /> )}
+</div>
+
+<style>
+.heart-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.heart-container img {
+    width: clamp(4rem, 6vw, 8rem);
+    padding-right: 2rem;
+}
+</style>
