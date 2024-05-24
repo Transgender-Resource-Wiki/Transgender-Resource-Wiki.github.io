@@ -56,7 +56,7 @@
     z-index: 0;
     top: 0;
 	  left: 0;
-	  width: 12vw;
+	  width: 14vw;
 	  height: 100vh;
   }
   .left-pink {
@@ -64,7 +64,7 @@
     position: fixed;
     z-index: 0;
     top: 0;
-    left: 12vw;
+    left: 14vw;
     width: 4vw;
     height: 100vh;
   }
@@ -96,7 +96,7 @@
     z-index: 1;
     top: 5%;
     left: -0.2%;
-    width: 11.9vw;
+    width: 13.9vw;
     height: 28%;
   }
   

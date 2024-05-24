@@ -88,7 +88,7 @@
         margin: 0;
         top: 38.25%;
         left: 0%;
-		width: 11.72vw;
+		width: 13.72vw;
 		height: 61vh;
 		max-height: 61vh;
 		flex-direction: column;
@@ -111,12 +111,12 @@
     .contents-table-mobile a {
         color: whitesmoke;
         text-decoration: none;
-        font-size: 1.25rem;
+        font-size: clamp(0.75rem, 3vw, 1.25rem);
         text-shadow: 2px 2px 4px black;
     }
     .contents-table a:hover,
     .contents-table-mobile a:hover {
-        font-size: 1.33rem;
+        font-size: clamp(0.75rem, 3.5vw, 1.33rem);
     }
 
     .contents-table span,
@@ -129,9 +129,9 @@
     	top: 33.5%;
     	margin: 0;
     	left: -0.2%;
-    	width: 11.9vw;
+    	width: 13.9vw;
     	height: 4.25%;
-    	font-size: 1.33rem;
+    	font-size: clamp(0.8rem, 4.5vw, 1.33rem);
     	color: whitesmoke;
     	box-sizing: border-box; 
         overflow: hidden;

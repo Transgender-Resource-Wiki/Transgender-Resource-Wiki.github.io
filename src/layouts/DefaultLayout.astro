@@ -2,10 +2,9 @@
 const {frontmatter} = Astro.props;
 
 const links = [["Home", "/"],
-["Post", "/post"], ["About2", "/about"], ["About3", "/about"],
-["About4", "/about"], ["About5", "/about"], ["About6", "/about"],
-["About7", "/about"], ["About8", "/about"], ["About9", "/about"],
-["About0", "/about"], ["About1", "/about"], ["About2", "/about"]];
+["Am I Trans?", "/amitrans"], ["Social Transitioning", "/about"],
+["Medical Transitioning", "/about"], ["Traveling", "/traveling"],
+["Media & Other Resources", "/about"], ["About", "/"], ["About", "/"], ["About", "/"], ["About", "/"]];
 import SiteNav from "../scripts/SiteNav"
 import SiteMap from "../components/SiteMap.astro"
 import '../styles/ContentsTable.css';
@@ -35,15 +34,16 @@ import '../styles/ContentsTable.css';
       margin-top: 10vh;
       margin-bottom: 6vh;
       color: rgb(68, 68, 70);
+      display: block;
       font-size: large;
       font-family: Verdana, sans-serif, system-ui;
   }
 
   @media (min-width: 769px) {
     body {
-      display: flex;
+      display: block;
       margin-left: 28vw;
-      margin-right: 20vw;
+      margin-right: 18vw;
       margin-top: 2vh;
       margin-bottom: 2vh;
     }

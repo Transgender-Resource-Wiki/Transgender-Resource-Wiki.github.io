@@ -61,7 +61,7 @@ const { link } = Astro.props;
 		left: 20%;
     	right: 17%;
 		width: auto;
-		font-size: 1.33rem;
+		font-size: clamp(0.8rem, 4.5vw, 1.33rem);
 		color: whitesmoke;
 		font-family: Verdana, sans-serif, system-ui;
 	}
@@ -79,10 +79,18 @@ const { link } = Astro.props;
 		height: auto;
 		padding-left: 0;
 		text-align: center;
-		font-size: 1.25rem;
+		font-size: clamp(0.75rem, 3vw, 1.25rem);
 		color: whitesmoke;
 		font-family: Verdana, sans-serif, system-ui;
 		list-style-type: none;
+	}
+	.link-list li,
+	.link-list-mobile li {
+		padding-bottom: 4%;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: "...";
+		direction: ltr;
 	}
 	.link-list-mobile a {
 		color: whitesmoke;
@@ -90,7 +98,7 @@ const { link } = Astro.props;
 		text-shadow: 2px 2px 4px black;
 	}
 	.link-list-mobile a:hover {
-			font-size: 1.33rem;
+			font-size: clamp(0.75rem, 3.5vw, 1.33rem);
 	}
 
 	/* Desktop */ 
@@ -104,10 +112,11 @@ const { link } = Astro.props;
 		  	text-align: left;
 		  	top: 5%;
 		  	left: 0;
-		  	width: 12vw;
+		  	width: auto;
+			max-width: 14%;
 		  	height: auto;
 		  	max-height: 28%;
-		  	overflow-y: scroll;
+		  	overflow: scroll;
 		  	flex-direction: column;
 			margin: 0;
 			direction: rtl;
@@ -122,9 +131,9 @@ const { link } = Astro.props;
     		top: 0.2%;
     		margin: 0;
     		left: -0.2%;
-    		width: 11.9vw;
+    		width: 13.9vw;
     		height: 4.25%;
-    		font-size: 1.33rem;
+    		font-size: clamp(0.8rem, 1.33vw, 1.33rem);
     		color: whitesmoke;
     		font-family: Verdana, sans-serif, system-ui;
     		box-sizing: border-box; 
@@ -147,7 +156,7 @@ const { link } = Astro.props;
 		  	width: auto;
 		  	height: auto;
 		  	padding-left: 1.2vw;
-		  	font-size: 1.25rem;
+		  	font-size: clamp(0.75rem, 1vw, 1rem);
 		  	color: whitesmoke;
 		  	font-family: Verdana, sans-serif, system-ui;
 		  	list-style-type: none;
@@ -161,7 +170,7 @@ const { link } = Astro.props;
 		}
 		.link-list a:hover,
 		.link-list-mobile a:hover {
-			font-size: 1.33rem;
+			font-size: clamp(0.8rem, 1.1vw, 1.1rem);
 		}
 	}
 </style>
