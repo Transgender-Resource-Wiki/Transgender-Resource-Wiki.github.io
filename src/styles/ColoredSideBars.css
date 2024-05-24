@@ -30,7 +30,7 @@
 .right-pink {
     background-color: pink;
     position: fixed;
-    z-index: 0;
+    z-index: 2;
     top: 96vh;
     left: 0;
     width: 100vw;
@@ -39,7 +39,7 @@
 .right-blue {
     background-color: lightskyblue;
     position: fixed;
-    z-index: 0;
+    z-index: 2;
     top: 98vh;
     left: 0;
     width: 100vw;
