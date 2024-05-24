@@ -10,6 +10,7 @@ export default function SiteNav(){
         const siteMapDiv = document.getElementById('site-map-div');
         const siteMapP = document.getElementById('site-map-p');
         const siteMapUl = document.getElementById('site-map-ul');
+        const contentsTable = document.getElementById('toc');
         if (siteMapDiv) {
             siteMapDiv.className = toggled ? 'scroll-area-mobile' : 'scroll-area';
         }
@@ -19,6 +20,9 @@ export default function SiteNav(){
         if (siteMapUl) {
             siteMapUl.className = toggled ? 'link-list-mobile' : 'link-list';
         }
+        if (contentsTable) {
+          contentsTable.className = toggled ? 'contents-table-mobile' : 'contents-table';
+      }
     }, [toggled]);
 
     return (
@@ -29,13 +33,11 @@ export default function SiteNav(){
           <div className="center-white"></div>
           <div className="right-pink"></div>
           <div className="right-blue"></div>
-          <div className="horz-dark-blue-0"></div>
-          <div className="horz-dark-blue-1"></div>
+          <div className="smap-background"></div>
         
           {toggled && (
           <span>
             <div className="bg-block"></div>
-            <div className="bg-para-block"></div>
             <div className="bg-smap-block"></div>
             <div className="bg-darken"></div>
           </span>

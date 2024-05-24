@@ -5,7 +5,9 @@ interface Props {
 
 const { link } = Astro.props;
 ---
-<p id="site-map-p" class="paragraph">Site Map</p>
+<div id="site-map-p" class="paragraph">
+	<p>Site Map</p>
+</div>
 <div id="site-map-div" class="scroll-area">
 	
 	<ul id="site-map-ul" class="link-list">
@@ -19,21 +21,12 @@ const { link } = Astro.props;
 
 <style>
 	/*Mobile classes, regular is hidden and mobile is shown in menu*/ 
-	.scroll-area {
+	.scroll-area,
+	.paragraph,
+	.link-list {
 		visibility: hidden;
 		position: fixed;
 		z-index: -3;
-		width: 0;
-		height: 0;
-	}
-	.paragraph {
-		visibility: hidden;
-		position: fixed;
-		width: 0;
-		height: 0;
-	}
-	.link-list {
-		visibility: hidden;
 		width: 0;
 		height: 0;
 	}
@@ -41,47 +34,56 @@ const { link } = Astro.props;
 	.scroll-area-mobile {
 		visibility: visible;
 		background-color: none;
-		background-image: none;
 		position: fixed;
 		z-index: 3;
 		margin: 15px;
 		text-align: center;
 		top: 8%;
-		left: 0;
-		width: 95vw;
+		left: 20%;
+    	right: 17%;
+		width: auto;
 		height: auto;
 		max-height: 28vh;
 		overflow-y: scroll;
 		flex-direction: column;
+		direction: ltr;
 	}
 	.paragraph-mobile {
+		visibility: visible;
+    	background: linear-gradient(#589edb, #e591de);
 		position: fixed;
 		z-index: 3;
-		visibility: visible;
-		position: fixed;
-		top: 2vh;
-		text-align: center;
-		width: 95vw;
-		height: auto;
-		padding-left: 0;
+		border-radius: 0.5rem;
+    	box-sizing: border-box; 
+		margin: 15px;
+		top: 2.3%;
+		height: 5%;
+		left: 20%;
+    	right: 17%;
+		width: auto;
 		font-size: 1.33rem;
 		color: whitesmoke;
 		font-family: Verdana, sans-serif, system-ui;
-		
+	}
+	.paragraph-mobile p {
+		background: none;
+		position: relative; 
+    	text-align: center; 
+		margin: 0;
+		top: 20%;
+		text-shadow: 2px 2px 4px black;
 	}
 	.link-list-mobile {
 		visibility: visible;
 		width: auto;
 		height: auto;
-		padding-left: 3.5vw;
+		padding-left: 0;
 		text-align: center;
 		font-size: 1.25rem;
 		color: whitesmoke;
 		font-family: Verdana, sans-serif, system-ui;
 		list-style-type: none;
 	}
-
-	
 	.link-list-mobile a {
 		color: whitesmoke;
 		text-decoration: none;
@@ -93,26 +95,10 @@ const { link } = Astro.props;
 
 	/* Desktop */ 
 	@media (min-width: 769px) {
-		.scroll-area {
-		  	visibility: visible;
-		  	background-color: none;
-		  	background-image: none;
-		  	position: fixed;
-		  	z-index: 3;
-		  	text-align: left;
-		  	top: 5%;
-		  	left: 0;
-		  	width: 12vw;
-		  	height: auto;
-		  	max-height: 28%;
-		  	overflow-y: scroll;
-		  	flex-direction: column;
-			direction: rtl;
-		}  
+		.scroll-area,
 		.scroll-area-mobile {
 		  	visibility: visible;
 		  	background-color: none;
-		  	background-image: none;
 		  	position: fixed;
 		  	z-index: 3;
 		  	text-align: left;
@@ -123,47 +109,41 @@ const { link } = Astro.props;
 		  	max-height: 28%;
 		  	overflow-y: scroll;
 		  	flex-direction: column;
-		  	margin: 0;
+			margin: 0;
 			direction: rtl;
-		}   
-		.paragraph {
-		  	visibility: visible;
-		  	position: fixed;
-		  	top: 0.2%;
-		  	left: 0;
-		  	width: 9%;
-		  	height: auto;
-		  	padding-left: 0.5vw;
-		  	margin-top: 0.4%;
-		  	font-size: 1.33rem;
-		  	color: whitesmoke;
-		  	font-family: Verdana, sans-serif, system-ui;
-		}
+		}    
+		.paragraph,
 		.paragraph-mobile {
-		  	visibility: visible;
-		  	position: fixed;
-		  	top: 0.2vh;
-		  	left: 0;
-		  	width: auto;
-		  	height: auto;
-		  	padding-left: 0.5vw;
-		  	margin-top: 1vh;
-		  	font-size: 1.33rem;
-		  	color: whitesmoke;
-		  	font-family: Verdana, sans-serif, system-ui;
+			visibility: visible;
+    		background: linear-gradient(#589edb, #e591de);
+    		border-radius: 0.5rem;
+    		position: fixed;
+    		z-index: 0;
+    		top: 0.2%;
+    		margin: 0;
+    		left: -0.2%;
+    		width: 11.9vw;
+    		height: 4.25%;
+    		font-size: 1.33rem;
+    		color: whitesmoke;
+    		font-family: Verdana, sans-serif, system-ui;
+    		box-sizing: border-box; 
 		}
-		.link-list {
-		  	visibility: visible;
-		  	width: auto;
-		  	height: auto;
-		  	padding-left: 1.2vw;
-		  	font-size: 1.25rem;
-		  	color: whitesmoke;
-		  	font-family: Verdana, sans-serif, system-ui;
-		  	list-style-type: none;
+		.paragraph p,
+		.paragraph-mobile p {
+			background: none;
+			position: relative; 
+			margin-top: 0;
+			top: 5%;
+    		left: 5%; 
+    		text-align: left; 
+    		line-height: 1.5;
+			text-shadow: 2px 2px 4px black;
 		}
+		.link-list,
 		.link-list-mobile {
 		  	visibility: visible;
+			position: relative;
 		  	width: auto;
 		  	height: auto;
 		  	padding-left: 1.2vw;
@@ -171,8 +151,8 @@ const { link } = Astro.props;
 		  	color: whitesmoke;
 		  	font-family: Verdana, sans-serif, system-ui;
 		  	list-style-type: none;
+			text-align: left;
 		}
-
 		.link-list a,
 		.link-list-mobile a {
 			color: whitesmoke;
@@ -184,6 +164,4 @@ const { link } = Astro.props;
 			font-size: 1.33rem;
 		}
 	}
-
-	
 </style>
