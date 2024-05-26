@@ -1,5 +1,6 @@
 .described-link {
     margin-top: 2%;
+    min-width: 80%;
 }
 .described-link .dl-title {
     background: rgb(209, 212, 214);
@@ -7,6 +8,7 @@
     border-top-right-radius: 1rem;
     border-left: 5px solid rgb(122, 129, 136);
     width: fit-content;
+    max-width: 85%;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 0.3rem;
