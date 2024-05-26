@@ -1,0 +1,17 @@
+.button-blue {
+    background: linear-gradient( #91eafa, #a1dee9, #589edb);
+    border-radius: 0.5rem;
+    border: 2px solid rgb(94, 89, 109);
+    min-width: 4%;
+    width: fit-content;
+    height: 1rem;
+    line-height: 1.5rem;
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: whitesmoke;
+    text-shadow: 0px 0px 3px black;
+}
+.button-blue:active {
+    background: linear-gradient(#91eafa, #589edb, #467caf, #589edb, #91eafa);
+}
