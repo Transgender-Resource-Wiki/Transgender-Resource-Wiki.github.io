@@ -3,7 +3,7 @@
 .left-blue {
     background-color: lightskyblue;
     position: fixed;
-    z-index: 0;
+    z-index: 2;
     top: 0;
     left: 0;
     width: 100vw;
@@ -12,7 +12,7 @@
 .left-pink {
     background-color: pink;
     position: fixed;
-    z-index: 0;
+    z-index: 2;
     top: 4vh;
     left: 0;
     width: 100vw;
