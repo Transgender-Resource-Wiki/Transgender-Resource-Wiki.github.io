@@ -1,0 +1,45 @@
+.described-link {
+    margin-top: 2%;
+}
+.described-link .dl-title {
+    background: rgb(209, 212, 214);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-left: 5px solid rgb(122, 129, 136);
+    width: fit-content;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.3rem;
+    font-size: clamp(0.9rem, 1.2vw, 1.2rem);
+}
+.described-link .dl-title a {
+    color: blueviolet;
+    text-decoration: none;
+}
+.described-link .dl-title a:hover {
+    text-decoration: underline;
+}
+.described-link .dl-title a img {
+    display: inline;
+    vertical-align: bottom;
+    max-width: 1.5rem;
+    padding-left: 0.5rem;
+}
+.described-link .dl-title p {
+    margin: 0;
+    margin-top: 2%;
+    color: rgb(92, 65, 156);
+    font-size: clamp(0.8rem, 0.9vw, 0.9rem);
+}
+.described-link .dl-content {
+    background: rgb(209, 212, 214);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-left: 5px solid rgb(122, 129, 136);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    font-size: clamp(0.9rem, 1vw, 1.1rem);
+}
