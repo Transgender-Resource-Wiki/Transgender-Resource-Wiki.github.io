@@ -142,6 +142,9 @@
     .contents-table span,
     .contents-table-mobile span {
 		visibility: visible;
+        display: flex;
+        align-items: center;
+        justify-content: left;
     	background: linear-gradient(#589edb, #e591de);
     	border-radius: 0.5rem;
     	position: fixed;
@@ -151,7 +154,7 @@
     	left: -0.2%;
     	width: 13.9vw;
     	height: 4.25%;
-    	font-size: clamp(0.8rem, 4.5vw, 1.33rem);
+    	font-size: clamp(0.8rem, 3vw, 1.33rem);
     	color: whitesmoke;
     	box-sizing: border-box; 
         overflow: hidden;
@@ -161,8 +164,7 @@
         z-index: 1;
 		background: none;
 		position: relative; 
-		margin-top: 0;
-		top: 5%;
+		margin-top: 15;
     	left: 5%; 
     	text-align: left; 
     	line-height: 1.5;
