@@ -127,6 +127,8 @@ const { link } = Astro.props;
 		.paragraph,
 		.paragraph-mobile {
 			visibility: visible;
+			display: flex;
+			align-items: center;
     		background: linear-gradient(#589edb, #e591de);
     		border-radius: 0.5rem;
     		position: fixed;
@@ -145,10 +147,8 @@ const { link } = Astro.props;
 		.paragraph-mobile p {
 			background: none;
 			position: relative; 
-			margin-top: 0;
-			top: 5%;
+			margin-top: 15;
     		left: 5%; 
-			vertical-align: middle;
     		text-align: left; 
     		line-height: 1.5;
 			text-shadow: 2px 2px 4px black;
@@ -157,7 +157,7 @@ const { link } = Astro.props;
 		.link-list-mobile {
 		  	visibility: visible;
 			position: relative;
-		  	width: auto;
+		  	width: 13vw;
 		  	height: auto;
 		  	padding-left: 1.2vw;
 		  	font-size: clamp(0.75rem, 1vw, 1rem);
