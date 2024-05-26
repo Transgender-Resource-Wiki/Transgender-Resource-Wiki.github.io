@@ -1,0 +1,39 @@
+.horizontal-scroll-pane {
+    display: flex;
+    background: linear-gradient(lightblue, lightblue, pink, pink, white, white, pink, pink, lightblue, lightblue);
+    border-radius: 1rem;
+    border: 2px solid rgb(88, 93, 122);
+    height: fit-content;
+    width: 100%;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+
+.scroll-item {
+    padding: 1rem;
+    min-width: 40%;
+}
+
+/*Puts a shadow around described links inside the scroll pane*/
+.scroll-item .described-link .dl-content {
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+}
+.scroll-item .described-link .dl-title{
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+}
+/*Orients tooltips to be downwards in scroll panes*/
+.scroll-item .described-link .tooltip .tooltip-text {
+    top: 120%;
+    background: linear-gradient(rgba(0,0,0,1), rgba(0, 0, 0, 0.452));
+    bottom: auto;
+}
+.scroll-item .described-link .tooltip .tooltip-text::after {
+    top: -15%;
+    border-color: transparent transparent black transparent;
+}
+/*Fixes described link titles on mobile being too long only when they are in a scroll pane*/
+@media (max-width: 768px) {
+    .scroll-item .described-link .dl-title {
+        max-width: 70%;
+    }
+}
