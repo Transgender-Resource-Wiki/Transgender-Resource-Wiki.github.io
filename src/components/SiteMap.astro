@@ -61,6 +61,7 @@ const { link } = Astro.props;
 		left: 20%;
     	right: 17%;
 		width: auto;
+		overflow: hidden;
 		font-size: clamp(0.8rem, 4.5vw, 1.33rem);
 		color: whitesmoke;
 		font-family: Verdana, sans-serif, system-ui;
@@ -69,8 +70,9 @@ const { link } = Astro.props;
 		background: none;
 		position: relative; 
     	text-align: center; 
+		vertical-align: middle;
 		margin: 0;
-		top: 20%;
+		top: 0.3rem;
 		text-shadow: 2px 2px 4px black;
 	}
 	.link-list-mobile {
@@ -146,6 +148,7 @@ const { link } = Astro.props;
 			margin-top: 0;
 			top: 5%;
     		left: 5%; 
+			vertical-align: middle;
     		text-align: left; 
     		line-height: 1.5;
 			text-shadow: 2px 2px 4px black;
