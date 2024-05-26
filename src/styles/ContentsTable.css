@@ -34,6 +34,14 @@
     max-height: 61vh;
     list-style-type: none;
 }
+.contents-table-mobile li {
+    padding-bottom: 4%;
+    white-space: nowrap;
+	overflow: hidden;
+    color: whitesmoke;
+	text-overflow: ellipsis;
+    text-shadow: 2px 2px 4px black;
+    }
 .contents-table-mobile a {
     color: whitesmoke;
     text-decoration: none;
@@ -116,7 +124,7 @@
         white-space: nowrap;
 		overflow: hidden;
         color: whitesmoke;
-		text-overflow: "...";
+		text-overflow: ellipsis;
         text-shadow: 2px 2px 4px black;
     }
     .contents-table a,
