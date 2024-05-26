@@ -36,6 +36,10 @@
         padding: 5px 0;
     }
 }
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+}
+/*This creates the arrow*/
 .tooltip .tooltip-text::after {
     content: " ";
     position: absolute;
@@ -43,7 +47,4 @@
     left: 50%;
     border: 5px solid;
     border-color: black transparent transparent transparent;
-}
-.tooltip:hover .tooltip-text {
-    visibility: visible;
 }
