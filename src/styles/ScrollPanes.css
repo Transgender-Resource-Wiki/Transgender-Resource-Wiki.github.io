@@ -7,6 +7,18 @@
     width: 100%;
     flex-direction: row;
     overflow-x: scroll;
+    align-items: center;
+}
+.vertical-scroll-pane {
+    display: flex;
+    background: linear-gradient(lightblue, lightblue, pink, pink, white, white, pink, pink, lightblue, lightblue);
+    border-radius: 1rem;
+    border: 2px solid rgb(88, 93, 122);
+    height: 25%;
+    width: 100%;
+    flex-direction: column;
+    overflow-y: scroll;
+    align-items: left;
 }
 
 .scroll-item {
