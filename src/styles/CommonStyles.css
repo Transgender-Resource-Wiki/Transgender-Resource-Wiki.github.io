@@ -1,0 +1,18 @@
+.example-text {
+    display:inline;
+    background:#eaecee;
+    border-radius:0.5rem; 
+    padding:0 0.5rem 0 0.5rem;
+}
+.example-text-block {
+    display:inline-block;
+    background:#eaecee;
+    border-radius:0.5rem; 
+}
+.purple-link {
+    color: rgb(153, 89, 212);
+    text-decoration: none;
+}
+.purple-link:hover {
+    text-decoration: underline;
+}
